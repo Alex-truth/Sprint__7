@@ -2,7 +2,7 @@ import allure
 import requests
 from urls import Urls
 from data import ErrText
-from conftest import generate_random_string
+from helpers import generate_random_string
 
 class TestCreateCourier:
     allure.title('Тест на создание курьера и получение статус кода 201 и сообщения {"ok": True}')

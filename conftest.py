@@ -1,13 +1,8 @@
 import allure
 import pytest
 import requests
-import random
-import string
+from helpers import generate_random_string
 from urls import Urls
-
-allure.title('Генерирует случайную строку из букв и цифр')
-def generate_random_string(length=8):
-    return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
 
 allure.title('Создаёт курьера перед тестом и удаляет после')
 @pytest.fixture
